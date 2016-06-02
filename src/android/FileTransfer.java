@@ -817,6 +817,7 @@ public class FileTransfer extends CordovaPlugin {
                     context.targetFile = file;
 
                     Log.d(LOG_TAG, "Download file:" + sourceUri);
+                    file.setReadable(true, false);
 
                     FileProgressResult progress = new FileProgressResult();
 
