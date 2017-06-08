@@ -823,7 +823,7 @@ public class FileTransfer extends CordovaPlugin {
                     file = resourceApi.mapUriToFile(targetUri);
                     context.targetFile = file;
 
-                    Log.d(LOG_TAG, "Download file:" + sourceUri);
+                    LOG.d(LOG_TAG, "Download file:" + sourceUri);
                     file.setReadable(true, false);
 
                     FileProgressResult progress = new FileProgressResult();
